@@ -1,5 +1,5 @@
 from nlplogic.corenlp import get_tags, get_phrases
-
+ 
 def test_get_phrases():
     assert '10th-most-populous country' in get_phrases("Mexico")
 
