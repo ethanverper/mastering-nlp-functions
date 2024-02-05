@@ -32,9 +32,9 @@ def get_tags(name):
 
 
 def get_phrases(name):
-    """Find wikipedia name and return back tags"""
+    """Find wikipedia name and return back phrases"""
 
     text = summarize_wikipedia(name)
     blob = get_text_blob(text)
-    phrases = blob.phrases
+    phrases = blob.noun_phrases
     return phrases
